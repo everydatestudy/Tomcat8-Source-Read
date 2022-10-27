@@ -1217,7 +1217,7 @@ public class Tomcat {
 	}
 
 	public static void main(String[] args) throws Exception {
-		//这里没有做任何初始化处理
+		//这里没有做任何初始化处理 
 		Tomcat tomcat = new Tomcat();
 		tomcat.setPort(8080);
 		tomcat.setBaseDir("/tmp/tomcat");
