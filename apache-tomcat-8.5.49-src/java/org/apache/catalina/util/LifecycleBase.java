@@ -227,6 +227,7 @@ public abstract class LifecycleBase implements Lifecycle {
 
         try {
             setStateInternal(LifecycleState.STARTING_PREP, null, false);
+            //需要子类重新实现，重写该逻辑
             startInternal();//子类初始化具体逻辑。
             if (state.equals(LifecycleState.FAILED)) {
                 // This is a 'controlled' failure. The component put itself into the
